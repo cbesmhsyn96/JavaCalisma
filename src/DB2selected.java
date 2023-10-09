@@ -1,16 +1,21 @@
-public class DB2selected extends DBSelect{
+public class DB2selected extends DBSelect implements IDatabase{
     @Override
     public void getData() {
-        System.out.println("get data DB2selected");
+        System.out.println("db2 get Data");
     }
 
     @Override
-    public void setData() {
-        System.out.println("set data DB2selected");
+    public void addData() {
+        System.out.println("db2 add Data");
+    }
+
+    @Override
+    public void deleteData() {
+        System.out.println("db2 delete Data");
     }
 
     @Override
     public void updateData() {
-        System.out.println("update data DB2selected");
+        System.out.println("db2 update Data");
     }
 }

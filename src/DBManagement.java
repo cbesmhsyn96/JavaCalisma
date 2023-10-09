@@ -1,6 +1,6 @@
-public class DBManagment extends DBSelect{
+public class DBManagement implements IDatabase{
     DBSelect dbSelect;
-    public DBManagment(DBSelect dbSelect){
+    public DBManagement(DBSelect dbSelect){
         this.dbSelect = dbSelect;
     }
 
@@ -10,8 +10,13 @@ public class DBManagment extends DBSelect{
     }
 
     @Override
-    public void setData() {
-        this.dbSelect.setData();
+    public void addData() {
+        this.dbSelect.addData();
+    }
+
+    @Override
+    public void deleteData() {
+        this.dbSelect.deleteData();
     }
 
     @Override

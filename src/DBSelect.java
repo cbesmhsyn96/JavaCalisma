@@ -1,16 +1,21 @@
-public class DBSelect extends DBMethods{
+public class DBSelect implements IDatabase{
     @Override
     public void getData() {
-        System.out.println("get data DB Select");
+        System.out.println("select db get Data");
     }
 
     @Override
-    public void setData() {
-        System.out.println("set data DB Select");
+    public void addData() {
+        System.out.println("select db add Data");
+    }
+
+    @Override
+    public void deleteData() {
+        System.out.println("select db delete Data");
     }
 
     @Override
     public void updateData() {
-        System.out.println("update data DB Select");
+        System.out.println("select db update Data");
     }
 }

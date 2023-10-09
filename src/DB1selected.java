@@ -1,18 +1,21 @@
-import java.sql.SQLOutput;
-
-public class DB1selected extends DBSelect{
+public class DB1selected extends DBSelect implements IDatabase{
     @Override
     public void getData() {
-        System.out.println("get data DB1selected");
+        System.out.println("db1 get Data");
     }
 
     @Override
-    public void setData() {
-        System.out.println("set data DB1selected");
+    public void addData() {
+        System.out.println("db1 add Data");
+    }
+
+    @Override
+    public void deleteData() {
+        System.out.println("db1 delete Data");
     }
 
     @Override
     public void updateData() {
-        System.out.println("update data DB1selected");
+        System.out.println("db1 update Data");
     }
 }
