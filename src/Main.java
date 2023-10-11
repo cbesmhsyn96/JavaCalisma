@@ -39,5 +39,17 @@ public class Main {
         for (HashMap<String, String> arrayList:ogrList){
             System.out.println(arrayList);
         }
+        UstSinif nesne1 = new AltSinif1();
+        nesne1.staticDeger = 445;
+        System.out.println("nesne1 statik değer = "+nesne1.staticDeger);//455 verir
+        UstSinif nesne2 = new AltSinif2();
+        System.out.println("nesne2 statik değer = "+nesne2.staticDeger);//343 verir
+        UstSinif nesne3 = new AltSinif2();
+        UstSinif.staticDeger = 333;
+        System.out.println("nesne3 statik değer = "+nesne3.staticDeger);//333 verir
+        System.out.println("nesne3 statik değer(UstSinif.staticDeger) = "+UstSinif.staticDeger);//333
+        UstSinif nesne4 = new AltSinif2();
+        System.out.println("nesne4 statik değer = "+nesne4.staticDeger);//333 verir
+        System.out.println("nesne4 statik değer(UstSinif.staticDeger) = "+UstSinif.staticDeger);//333 verir
     }
 }
